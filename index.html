@@ -3,421 +3,343 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emerson Rosa</title>
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+    <title>Emerson Guimaraes — Cloud &amp; DevOps</title>
+    <meta
+      name="description"
+      content="Emerson Guimaraes — Technical Account Manager at CrowdStrike. Cloud, DevOps, and infrastructure-as-code projects."
     />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/user.png" />
-
-    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-jxgEXJVgX7JZdGm2GvvxHvggY2t8G87w3d5w5zouULU="
-      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%237B42BC'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3EEG%3C/text%3E%3C/svg%3E"
     />
   </head>
 
   <body>
-    <!-- Header -->
-    <header id="header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-3 bgcolor-black">
-            <nav class="primary-nav navbar-expand-md">
-              <div class="site-title text-center text-light py-5">
-                <a href="#" class="navbar-brand font-staat font-size-40">ER</a>
-              </div>
-              <div class="d-flex flex-column">
-                <a
-                  href="#home"
-                  class="nav-item nav-link text-white-50 font-os font-size-16 active"
-                  >Home</a
-                >
-                <a
-                  href="#about_me"
-                  class="nav-item nav-link text-white-50 font-os font-size-16 active"
-                  >About</a
-                >
-                <a
-                  href="#projects"
-                  class="nav-item nav-link text-white-50 font-os font-size-16 active"
-                  >Projects</a
-                >
-                <a
-                  href="#awards"
-                  class="nav-item nav-link text-white-50 font-os font-size-16 active"
-                  >Achievements</a
-                >
-                <a
-                  href="./assets/Rosa_Emerson.pdf"
-                  target="_blank"
-                  class="nav-item nav-link text-white-50 font-os font-size-16 active"
-                  >Resume</a
-                >
-              </div>
-              <div class="social-icons text-center my-4">
-                <a
-                  href="https://www.linkedin.com/in/emersonguimaraes0/"
-                  target="_blank"
-                  class="mx-2"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="https://github.com/eemersonrosa"
-                  target="_blank"
-                  class="mx-2"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <button class="toggle-button">
-        <span class="fas fa-bars fa-2x"></span>
-      </button>
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <header class="site-header">
+      <a href="#top" class="brand" aria-label="Emerson Guimaraes — home">
+        <span class="brand-mark">EG</span>
+        <span class="brand-path">~/emerson</span>
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="./assets/Emerson_Guimaraes.pdf" target="_blank" class="nav-resume"
+          >Resume</a
+        >
+      </nav>
     </header>
 
-    <!-- #header -->
-
-    <!-- Main Content -->
-    <main id="site-main">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-9 offset-md-3 px-0">
-            <!-- Banner Section -->
-            <section class="site-banner bg-light" id="home">
-              <div class="banner-area">
-                <div class="author text-center">
-                  <div class="author-img"></div>
-                  <h1
-                    class="text-black font-staat font-size-40 text-uppercase py-3"
-                  >
-                    Emerson Rosa
-                  </h1>
-                  <h5 class="text-black font-ram font-size-27">
-                     <span id="typed"></span>
-                  </h5>
-                </div>
-              </div>
-            </section>
-            <!-- #site-banner -->
-
-            <!-- About Me Section -->
-            <section class="about px-4 my-5" id="about_me">
-              <div class="me py-5">
-                <h5 class="text-uppercase font-os font-size-16 text-muted">
-                  Information
-                </h5>
-                <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
-              </div>
-              <div class="row">
-                <div class="col-sm-5 pl-0">
-                  <img
-                    src="./assets/worker.png"
-                    alt="Profile of Emerson Rosa working on a laptop"
-                    class="aboutme"
-                  />
-                </div>
-                <div class="col-sm-6">
-                  <h6 class="text-uppercase font-os font-size-16 text-muted">
-                    About Me
-                  </h6>
-                  <h5 class="font-ram font-size-20 py-2">
-                    I'm Emerson <span id="typed_2" class="flicker"></span>
-                  </h5>
-                  <p class="font-ram text-black-50 py-2">
-                    I am working on improving my Cloud DevOps skills. I am
-                    experienced in Amazon Web Services and Microsoft Azure.
-                  </p>
-                  <div
-                    class="d-flex flex-row flex-wrap justify-content-between py-4"
-                  >
-                    <div class="d-flex flex-column">
-                      <p class="font-ram">
-                        <b>GitHub: </b
-                        ><a
-                          href="https://github.com/eemersonrosa"
-                          target="_blank"
-                          class="text-black-50"
-                          >github.com/eemersonrosa</a
-                        >
-                      </p>
-                      <p class="font-ram">
-                        <b>Website: </b
-                        ><a
-                          href="https://erosa.net"
-                          target="_blank"
-                          class="text-black-50"
-                          >erosa.net</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                  <button
-                    type="submit"
-                    onclick="window.open('./assets/Rosa_Emerson.pdf')"
-                    class="btn btn-dark text-uppercase mr-3"
-                  >
-                    Download CV
-                  </button>
-                </div>
-              </div>
-            </section>
-            <!-- #about me -->
-
-            <!-- Skills Section -->
-            <section class="skill px-4 py-5 bg-light" id="services">
-              <div class="ability py-3">
-                <h5 class="text-uppercase font-os font-size-16 text-muted">
-                  Ability
-                </h5>
-                <h1 class="text-uppercase font-staat font-size-34">
-                  My Skills
-                </h1>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 pl-4">
-                  <p class="font-ram font-size-16 text-black-50 pb-3">
-                    I am proficient in MySQL and MSSQL, and have extensive
-                    experience with various networking technologies.
-                    Additionally, I am well-versed in Git and source control
-                    management as well as knowledge and practical experience in
-                    cybersecurity.
-                  </p>
-                  <ul class="list-inline dev-icons">
-                    <li class="list-inline-item">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-                        alt="AWS"
-                      />
-                    </li>
-                    <li class="list-inline-item">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg"
-                        alt="Azure"
-                      />
-                    </li>
-                    <li class="list-inline-item">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-                        alt="MSSQL"
-                      />
-                    </li>
-                    <li class="list-inline-item">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                        alt="Python"
-                      />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-            <!-- #skills -->
-
-            <!-- Projects Section -->
-            <section class="projects px-4 py-5" id="projects">
-              <div class="work py-3">
-                <h5 class="text-uppercase font-os font-size-16 text-muted">
-                  What I Have Built
-                </h5>
-                <h1 class="text-uppercase font-staat font-size-34">
-                  My Projects
-                </h1>
-              </div>
-              <div class="row">
-                <div class="col-md-6 mb-4">
-                  <div class="card project-card h-100">
-                    <div class="card-body">
-                      <h5 class="card-title font-staat font-size-20">
-                        Terraform Cloud Resume
-                      </h5>
-                      <h6 class="card-subtitle mb-2 text-muted font-os font-size-16">
-                        Terraform &bull; AWS S3 &bull; Cloudflare &bull; GitHub Actions
-                      </h6>
-                      <p class="card-text font-ram text-black-50">
-                        My take on the Cloud Resume Challenge: a resume site
-                        deployed entirely with infrastructure as code &mdash;
-                        S3 static hosting behind Cloudflare, provisioned with
-                        Terraform modules and shipped through a CI/CD pipeline.
-                      </p>
-                    </div>
-                    <div class="card-footer bg-transparent project-links">
-                      <a
-                        href="https://github.com/eemersonrosa/terraform-cloud-resume"
-                        target="_blank"
-                        aria-label="Terraform Cloud Resume on GitHub"
-                        ><i class="fab fa-github"></i> Code</a
-                      >
-                      <a
-                        href="https://erosa.net"
-                        target="_blank"
-                        aria-label="Terraform Cloud Resume live site"
-                        ><i class="fas fa-external-link-alt"></i> Live</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <div class="card project-card h-100">
-                    <div class="card-body">
-                      <h5 class="card-title font-staat font-size-20">
-                        Terraform Code
-                      </h5>
-                      <h6 class="card-subtitle mb-2 text-muted font-os font-size-16">
-                        Terraform &bull; HCL
-                      </h6>
-                      <p class="card-text font-ram text-black-50">
-                        A growing collection of Terraform configurations and
-                        reusable modules from my infrastructure-as-code
-                        practice across AWS and other providers.
-                      </p>
-                    </div>
-                    <div class="card-footer bg-transparent project-links">
-                      <a
-                        href="https://github.com/eemersonrosa/terraform-code"
-                        target="_blank"
-                        aria-label="Terraform Code on GitHub"
-                        ><i class="fab fa-github"></i> Code</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <div class="card project-card h-100">
-                    <div class="card-body">
-                      <h5 class="card-title font-staat font-size-20">
-                        The Neon Larks &mdash; Band Site
-                      </h5>
-                      <h6 class="card-subtitle mb-2 text-muted font-os font-size-16">
-                        HTML &bull; CSS &bull; Vanilla JavaScript
-                      </h6>
-                      <p class="card-text font-ram text-black-50">
-                        A responsive demo website for a fictional band,
-                        featuring a show listings page and an interactive
-                        comments section built with vanilla JavaScript.
-                      </p>
-                    </div>
-                    <div class="card-footer bg-transparent project-links">
-                      <a
-                        href="https://github.com/eemersonrosa/emerson-guimaraes-bandsite"
-                        target="_blank"
-                        aria-label="Band site on GitHub"
-                        ><i class="fab fa-github"></i> Code</a
-                      >
-                      <a
-                        href="https://eemersonrosa.github.io/emerson-guimaraes-bandsite/"
-                        target="_blank"
-                        aria-label="Band site live demo"
-                        ><i class="fas fa-external-link-alt"></i> Live</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <div class="card project-card h-100">
-                    <div class="card-body">
-                      <h5 class="card-title font-staat font-size-20">
-                        Ember &amp; Pine Coffee
-                      </h5>
-                      <h6 class="card-subtitle mb-2 text-muted font-os font-size-16">
-                        HTML &bull; CSS
-                      </h6>
-                      <p class="card-text font-ram text-black-50">
-                        A responsive demo website for a fictional coffee shop,
-                        built with semantic HTML and modern CSS layout
-                        techniques.
-                      </p>
-                    </div>
-                    <div class="card-footer bg-transparent project-links">
-                      <a
-                        href="https://github.com/eemersonrosa/emerson-guimaraes-coffeeshop"
-                        target="_blank"
-                        aria-label="Coffee shop site on GitHub"
-                        ><i class="fab fa-github"></i> Code</a
-                      >
-                      <a
-                        href="https://eemersonrosa.github.io/emerson-guimaraes-coffeeshop/"
-                        target="_blank"
-                        aria-label="Coffee shop site live demo"
-                        ><i class="fas fa-external-link-alt"></i> Live</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- #projects -->
-
-            <!-- Awards Section -->
-            <section class="awards px-4 py-5 bg-light" id="awards">
-              <div class="do py-5">
-                <h5 class="text-uppercase font-os font-size-16 text-muted">
-                  What I Have Achieved
-                </h5>
-                <h1 class="text-uppercase font-staat font-size-34">
-                  <i class="fas fa-award"></i> Certifications
-                </h1>
-              </div>
-              <div class="w-100">
-                <ul class="mb-0 font-ram font-size-16 text-black-50 pb-3">
-                  <li>Android Enterprise Certified Expert</li>
-                  <li>Microsoft Certified Azure Administrator Associate</li>
-                  <li>Microsoft Certified Azure Security Engineer Associate</li>
-                  <li>Microsoft Certified Azure Fundamentals</li>
-                  <li>AWS Certified Cloud Practitioner</li>
-                </ul>
-              </div>
-            </section>
-            <!-- #awards -->
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"># cloud resume — declared, planned, applied</p>
+          <h1>
+            Emerson<br />Guimaraes
+          </h1>
+          <p class="hero-sub">
+            Technical Account Manager at CrowdStrike. I keep enterprise
+            customers and their infrastructure healthy — and I build with
+            Terraform, AWS, and Azure to stay sharp.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn btn-primary"
+              href="./assets/Emerson_Guimaraes.pdf"
+              target="_blank"
+              >Download resume (PDF)</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/eemersonrosa"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
           </div>
         </div>
-      </div>
+
+        <div class="terminal" aria-label="Terraform-style summary of Emerson">
+          <div class="terminal-bar">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+            <span class="terminal-title">terraform apply</span>
+          </div>
+          <pre class="terminal-body"><code id="hcl"><span class="t-key">resource</span> <span class="t-str">"engineer"</span> <span class="t-str">"emerson"</span> {
+  <span class="t-attr">name</span>     = <span class="t-str">"Emerson Guimaraes"</span>
+  <span class="t-attr">role</span>     = <span class="t-str">"Technical Account Manager"</span>
+  <span class="t-attr">company</span>  = <span class="t-str">"CrowdStrike"</span>
+  <span class="t-attr">location</span> = <span class="t-str">"Edmonton, AB"</span>
+  <span class="t-attr">stack</span>    = [<span class="t-str">"aws"</span>, <span class="t-str">"azure"</span>, <span class="t-str">"terraform"</span>]
+}</code><code id="apply-line">
+<span class="t-plan">Plan: 1 to add, 0 to change, 0 to destroy.</span>
+<span class="t-ok">Apply complete! Resources: 1 added.</span></code></pre>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <p class="eyebrow"># about</p>
+        <h2>Infrastructure you can read</h2>
+        <div class="about-grid">
+          <p>
+            I've spent the last five years moving from racking servers to
+            running cloud infrastructure: systems technician, L2 support,
+            global technical support, and now Technical Account Manager at
+            CrowdStrike, where I'm the technical point of contact for
+            enterprise security customers.
+          </p>
+          <p>
+            I like infrastructure that explains itself — Terraform plans you
+            can review, pipelines that ship on push, and documentation that
+            shortens someone else's day. This site is the current form of my
+            Cloud Resume Challenge project; at home, a self-hosted homelab
+            gives me a place to break things on purpose.
+          </p>
+        </div>
+        <ul class="skills" aria-label="Skills">
+          <li class="skill-group">
+            <span class="skill-label">cloud_and_iac</span>
+            <span>AWS · Azure · Terraform · CloudFormation · Docker ·
+              Kubernetes · Jenkins · Git</span>
+          </li>
+          <li class="skill-group">
+            <span class="skill-label">systems_and_network</span>
+            <span>Linux · Windows · macOS · VMware · Hyper-V · Cisco ·
+              Wireshark</span>
+          </li>
+          <li class="skill-group">
+            <span class="skill-label">data</span>
+            <span>SQL · MySQL · MSSQL · MongoDB</span>
+          </li>
+          <li class="skill-group">
+            <span class="skill-label">scripting</span>
+            <span>Bash · Python · PowerShell</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <p class="eyebrow"># experience</p>
+        <h2>Where I've worked</h2>
+        <ol class="timeline">
+          <li>
+            <div class="when">Dec 2024 — present</div>
+            <div class="what">
+              <h3>Technical Account Manager · CrowdStrike</h3>
+              <p>
+                Primary technical contact for enterprise accounts — aligning
+                customer goals with technical solutions across sales,
+                engineering, and product, and delivering proactive health
+                checks and performance reviews that keep environments running.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="when">Sep 2022 — Dec 2024</div>
+            <div class="what">
+              <h3>Technical Support Specialist · Upshop</h3>
+              <p>
+                Global support for Invatron software with a 95% client
+                satisfaction rate. Deployed and maintained Azure services
+                (VNet, VMs, Blob Storage), ran MS SQL / IIS / PHP upgrades,
+                and managed MySQL, MongoDB, and MSSQL databases through
+                zero-loss migrations.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="when">Dec 2021 — Sep 2022</div>
+            <div class="what">
+              <h3>Technical Support Specialist L2 · SOTI</h3>
+              <p>
+                Mobile device management support for global enterprises:
+                Cisco networking and firewalls, certificate deployment,
+                L2VPN/IPsec services, and cloud automation with Terraform and
+                CloudFormation that cut deployment times by 40%.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="when">Mar 2021 — Dec 2021</div>
+            <div class="what">
+              <h3>System Technician · National Time</h3>
+              <p>
+                Physical server installs, Windows Server and DNS/DHCP
+                configuration, on-prem and cloud backups, and Cisco/Juniper
+                routing and switching.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <p class="eyebrow"># projects</p>
+        <h2>What I've built</h2>
+        <div class="project-grid">
+          <article class="project">
+            <h3>Terraform Cloud Resume</h3>
+            <p class="tags">terraform · aws s3 · cloudflare · github actions</p>
+            <p>
+              My take on the Cloud Resume Challenge: a resume site deployed
+              entirely with infrastructure as code — S3 static hosting behind
+              Cloudflare, provisioned with Terraform modules and shipped
+              through CI/CD. The site you're reading is its direct descendant.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/eemersonrosa/terraform-cloud-resume"
+                target="_blank"
+                rel="noopener"
+                >Code ↗</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <h3>Terraform Code</h3>
+            <p class="tags">terraform · hcl</p>
+            <p>
+              A growing collection of Terraform configurations and reusable
+              modules from my infrastructure-as-code practice across AWS and
+              other providers.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/eemersonrosa/terraform-code"
+                target="_blank"
+                rel="noopener"
+                >Code ↗</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <h3>The Neon Larks — band site</h3>
+            <p class="tags">html · css · vanilla js</p>
+            <p>
+              A responsive demo website for a fictional band, with a show
+              listings page and an interactive comments section built in
+              vanilla JavaScript.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/eemersonrosa/emerson-guimaraes-bandsite"
+                target="_blank"
+                rel="noopener"
+                >Code ↗</a
+              >
+              <a
+                href="https://eemersonrosa.github.io/emerson-guimaraes-bandsite/"
+                target="_blank"
+                rel="noopener"
+                >Live ↗</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <h3>Ember &amp; Pine Coffee</h3>
+            <p class="tags">html · css</p>
+            <p>
+              A responsive demo website for a fictional coffee shop, built
+              with semantic HTML and modern CSS layout techniques.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/eemersonrosa/emerson-guimaraes-coffeeshop"
+                target="_blank"
+                rel="noopener"
+                >Code ↗</a
+              >
+              <a
+                href="https://eemersonrosa.github.io/emerson-guimaraes-coffeeshop/"
+                target="_blank"
+                rel="noopener"
+                >Live ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="section" id="certifications">
+        <p class="eyebrow"># certifications</p>
+        <h2>Certifications &amp; education</h2>
+        <ul class="certs">
+          <li>
+            <span
+              >CrowdStrike Certified Falcon Administrator (CCFA)</span
+            >
+            <span class="cert-date">2025</span>
+          </li>
+          <li>
+            <span>Microsoft Certified: Azure Administrator Associate</span>
+            <span class="cert-date">Oct 2022</span>
+          </li>
+          <li>
+            <span>Microsoft Certified: Azure Security Engineer Associate</span>
+            <span class="cert-date">Oct 2022</span>
+          </li>
+          <li>
+            <span>Android Enterprise Certified Expert</span>
+            <span class="cert-date">Jun 2022</span>
+          </li>
+          <li>
+            <span>AWS Certified Cloud Practitioner</span>
+            <span class="cert-date">Feb 2022</span>
+          </li>
+          <li class="edu">
+            <span
+              >Centennial College — Computer Systems Networking, Toronto</span
+            >
+            <span class="cert-date">2020</span>
+          </li>
+        </ul>
+      </section>
     </main>
-    <!-- #main content -->
 
-    <!-- Footer -->
-    <footer id="footer"></footer>
-    <!-- Footer -->
+    <footer class="site-footer">
+      <p class="footer-cta">
+        <a href="mailto:emersonrosa13@gmail.com">emersonrosa13@gmail.com</a>
+        <a
+          href="https://github.com/eemersonrosa"
+          target="_blank"
+          rel="noopener"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/emersonguimaraes0/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+      </p>
+      <p class="footer-note">
+        Deployed from a <code>git push</code> · served by GitHub Pages ·
+        <a
+          href="https://github.com/eemersonrosa/eemersonrosa.github.io"
+          target="_blank"
+          rel="noopener"
+          >view source</a
+        >
+      </p>
+    </footer>
 
-    <!-- JavaScript Libraries -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
-      integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Custom JavaScript -->
-    <script src="./typed/typed.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
