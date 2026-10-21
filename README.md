@@ -11,8 +11,9 @@ project — this edition is a static site served straight from this repo.
 - Resume (viewable/downloadable PDF)
 - About, experience, skills, and certifications
 - Project showcase with links to code and live demos:
-  - [Terraform Cloud Resume](https://github.com/eemersonrosa/terraform-cloud-resume)
-  - [Terraform Code](https://github.com/eemersonrosa/terraform-code)
+  - [Hearthboard](https://github.com/eemersonrosa/hearthboard) — [live](https://eemersonrosa.github.io/hearthboard/)
+  - [Terraform Cloud Resume](https://github.com/eemersonrosa/terraform-cloud-resume) (proof of concept, not deployed)
+  - [Terraform Code](https://github.com/eemersonrosa/terraform-code) (Azure)
   - [The Neon Larks — Band Site](https://github.com/eemersonrosa/emerson-guimaraes-bandsite) — [live](https://eemersonrosa.github.io/emerson-guimaraes-bandsite/)
   - [Ember & Pine Coffee](https://github.com/eemersonrosa/emerson-guimaraes-coffeeshop) — [live](https://eemersonrosa.github.io/emerson-guimaraes-coffeeshop/)
 
