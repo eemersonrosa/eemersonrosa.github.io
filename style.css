@@ -1,23 +1,29 @@
+/* Hallmark · shape: kept · genre: modern-minimal · theme: brand · redesign: restyle
+ * paper: oklch(99% 0.004 170) · accent: oklch(54% 0.11 165) · display: Bricolage Grotesque · body: IBM Plex Sans · hero: kept · nav: kept · footer: kept · signature: the "Apply complete" green lifted from the hero terminal into the whole identity
+ * axes: cool-slate paper / Bricolage Grotesque / evergreen accent · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P2 H1 E1 S2 R1 V1 · weakest: green risks reading eco not infra — held by near-black type, the dark code panel and mono kept only for code */
 /* ---------------------------------------------------------------
    Emerson Guimaraes — cloud resume
-   Palette: paper #FBFAFD · ink #1A1523 · terraform purple #7B42BC
-   Type: Bricolage Grotesque (display) · IBM Plex Sans · IBM Plex Mono
+   Palette: paper #FBFCFC · ink #10201B · evergreen #0B7D5E (the apply-green)
+   Type: Bricolage Grotesque (display) · IBM Plex Sans · IBM Plex Mono (code only)
 ---------------------------------------------------------------- */
 
 :root {
-  --paper: #fbfafd;
-  --surface: #f3f0f8;
-  --ink: #1a1523;
-  --ink-soft: #4c4460;
-  --line: #e4def0;
-  --accent: #7b42bc;
-  --accent-text: #6633a6;
-  --accent-deep: #46237a;
-  --term-bg: #1a1523;
-  --term-attr: #c9a8f0;
+  --paper: #fbfcfc;
+  --surface: #eef3f1;
+  --ink: #10201b;
+  --ink-soft: #46574f;
+  --line: #dde6e1;
+  --accent: #0b7d5e;
+  --accent-text: #0a6a50;
+  --accent-deep: #08503c;
+  --on-accent: #ffffff;
+  --term-bg: #0e1a16;
+  --term-fg: #e6efe9;
+  --term-attr: #8fd9c4;
   --term-str: #5fd3ab;
-  --term-dim: #8e85a3;
-  --ok: #2ea883;
+  --term-dim: #7f8d87;
+  --ok: #6ee7b0;
 
   --font-display: "Bricolage Grotesque", "Arial Black", sans-serif;
   --font-body: "IBM Plex Sans", -apple-system, sans-serif;
@@ -28,6 +34,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: clip;
 }
 
 html {
@@ -45,7 +56,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 a {
@@ -62,18 +73,19 @@ button:focus-visible {
 .skip-link {
   position: absolute;
   left: 1rem;
-  top: -3rem;
+  top: 0;
   z-index: 100;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   padding: 0.5rem 1rem;
   border-radius: 0 0 8px 8px;
   text-decoration: none;
-  transition: top 0.2s ease;
+  transform: translateY(-120%);
+  transition: transform 0.2s ease;
 }
 
 .skip-link:focus {
-  top: 0;
+  transform: translateY(0);
 }
 
 /* Header ------------------------------------------------------- */
@@ -106,7 +118,7 @@ button:focus-visible {
   height: 2rem;
   border-radius: 8px;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 500;
@@ -135,6 +147,10 @@ button:focus-visible {
   color: var(--accent-text);
 }
 
+.site-nav a:active {
+  color: var(--accent-deep);
+}
+
 .site-nav .nav-resume {
   color: var(--accent-text);
   font-weight: 600;
@@ -153,20 +169,16 @@ button:focus-visible {
     clamp(3rem, 7vh, 5.5rem);
 }
 
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--accent-text);
-  margin-bottom: 1rem;
-}
-
 .hero h1 {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(3rem, 8vw, 5.5rem);
-  line-height: 0.95;
+  line-height: 1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
 .hero-sub {
@@ -195,13 +207,18 @@ button:focus-visible {
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
-  box-shadow: 0 4px 14px rgba(123, 66, 188, 0.3);
+  color: var(--on-accent);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--accent) 30%, transparent);
 }
 
 .btn-primary:hover {
   background: var(--accent-deep);
   transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 24%, transparent);
 }
 
 .btn-ghost {
@@ -214,32 +231,27 @@ button:focus-visible {
   color: var(--accent-text);
 }
 
-/* Terminal ------------------------------------------------------ */
+.btn-ghost:active {
+  transform: translateY(1px);
+}
+
+/* Code panel ---------------------------------------------------- */
 
 .terminal {
   background: var(--term-bg);
   border-radius: 14px;
-  box-shadow: 0 24px 60px -20px rgba(26, 21, 35, 0.45);
+  box-shadow: 0 24px 60px -20px color-mix(in srgb, var(--ink) 45%, transparent);
   overflow: hidden;
 }
 
-.terminal-bar {
+.terminal-head {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.7rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.terminal-bar .dot {
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.16);
+  padding: 0.7rem 1.1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--term-fg) 10%, transparent);
 }
 
 .terminal-title {
-  margin-left: 0.5rem;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--term-dim);
@@ -250,7 +262,7 @@ button:focus-visible {
   font-family: var(--font-mono);
   font-size: clamp(0.72rem, 1.6vw, 0.88rem);
   line-height: 1.7;
-  color: #e8e4f1;
+  color: var(--term-fg);
   overflow-x: auto;
 }
 
@@ -312,6 +324,9 @@ button:focus-visible {
   font-weight: 700;
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   letter-spacing: -0.01em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  min-width: 0;
   margin-bottom: 2rem;
 }
 
@@ -346,8 +361,8 @@ button:focus-visible {
 }
 
 .skill-label {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: var(--accent-text);
 }
 
@@ -367,8 +382,8 @@ button:focus-visible {
 }
 
 .timeline .when {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
   color: var(--accent-text);
   padding-top: 0.3rem;
   white-space: nowrap;
@@ -420,8 +435,7 @@ button:focus-visible {
 }
 
 .project .tags {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--accent-text);
 }
 
@@ -447,6 +461,10 @@ button:focus-visible {
   text-decoration: underline;
 }
 
+.project-links a:active {
+  color: var(--accent-deep);
+}
+
 /* Certifications ------------------------------------------------ */
 
 .certs {
@@ -469,8 +487,8 @@ button:focus-visible {
 }
 
 .cert-date {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
   color: var(--ink-soft);
   white-space: nowrap;
 }
